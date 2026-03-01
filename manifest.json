@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "ShieldX",
+  "version": "1.0.0",
+  "description": "Demo: floating AI safety widget that scans pages for scam patterns.",
+  "permissions": ["storage"],
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_end"
+    }
+  ]
+}
